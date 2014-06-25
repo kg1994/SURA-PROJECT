@@ -1,4 +1,4 @@
 SURA-PROJECT
 ============
 
-Code Vamp Plugin modified for better recognition of chords through Viterbi Algorithm
+Vamp Plugin Code modified for better recognition of chords through Viterbi Algorithm
