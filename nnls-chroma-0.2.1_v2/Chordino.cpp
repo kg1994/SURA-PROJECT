@@ -656,30 +656,30 @@ chroma_features.push_back(chroma);
 
     cerr << "done." << endl;
     /////////////////////////////////////////////////////////////////////////////////////////////////////////
-    cerr << chroma_features.size() << endl;
-    vector<vector<float>* > similarity_matrix;
-    vector<float> new_features();
-    int c = 0;
-    for(int ii=0;ii<chroma_features.size();ii)
-    {
-        vector<float> tr(chroma_features.size(),0.0);
-     similarity_matrix.push_back(&tr);
-        for(int kk=0;kk<chroma_features.size();kk++)
-        {    
-            float temp = 0;
-            //  //cerr << chroma_features[ii].size() << " " <<chroma_features[kk].size() << endl;
-            for(int jj=12;jj<24;jj++)
-            {  // cerr << " here " ;
-                 temp += pow(abs(chroma_features[ii][jj]-chroma_features[kk][jj]),2.0);
-            }
+    //cerr << chroma_features.size() << endl;
+    //vector<vector<float>* > similarity_matrix;
+    //vector<float> new_features();
+    //int c = 0;
+    //for(int ii=0;ii<chroma_features.size();ii)
+    //{
+    //    vector<float> tr(chroma_features.size(),0.0);
+    // similarity_matrix.push_back(&tr);
+    //    for(int kk=0;kk<chroma_features.size();kk++)
+    //    {    
+    //        float temp = 0;
+    //        //  //cerr << chroma_features[ii].size() << " " <<chroma_features[kk].size() << endl;
+    //        for(int jj=12;jj<24;jj++)
+    //        {  // cerr << " here " ;
+    //             temp += pow(abs(chroma_features[ii][jj]-chroma_features[kk][jj]),2.0);
+    //        }
 
-             (*similarity_matrix[ii])[kk] = sqrt(temp);
+    //         (*similarity_matrix[ii])[kk] = sqrt(temp);
 
-        }
-        // if(ii%10000 == 0){
-        //     cerr << ii  << "-" << c << " ";c++;}
-    }
-    cerr << "hell" << endl;  
+    //    }
+    //    // if(ii%10000 == 0){
+    //    //     cerr << ii  << "-" << c << " ";c++;}
+    //}
+    //cerr << "hell" << endl;  
     //cerr << similarity_matrix[0][0] << endl;//" " << similarity_matrix[1][1] << " " << similarity_matrix[1][5] << endl;
 
 
